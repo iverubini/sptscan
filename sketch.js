@@ -29,8 +29,6 @@ function setup() {
 
 function draw() {
   
-  getAudioContext();
-  userStartAudio();
   cam.loadPixels();
   cam.hide();
   
@@ -58,6 +56,8 @@ function draw() {
 
 function startMIC() {
   
+  getAudioContext();
+  userStartAudio();
   button.hide();
   mic.start();
   
