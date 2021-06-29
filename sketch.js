@@ -29,7 +29,8 @@ function setup() {
 
 function draw() {
   
-  
+  getAudioContext();
+  userStartAudio();
   cam.loadPixels();
   cam.hide();
   
