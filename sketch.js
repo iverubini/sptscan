@@ -12,7 +12,7 @@ function setup() {
   cam = createCapture(VIDEO);
   //cam.size(wC/3, hC/3);
   
-  background(251, 193, 147);
+  background(245, 120, 147);
   
   button = createButton("start");
   button.size(150, 80);
@@ -37,10 +37,10 @@ function draw() {
   
   var voz = mic.getLevel();
   
-  copy(cam, w/2, 0, w, h, x, y, wC/4, hC/4);
+  copy(cam, w/2, 0, w, h, x, y, wC/3, hC/3);
   
   
-  if (voz > 0.01) {x = x+2;};
+  if (voz > 0.01) {x = x+5;};
     
   if (x > wC) { x = 0; y = y + 150} ;
   
